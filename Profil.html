@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./dist/output.css">
+    <title>Profil</title>
+</head>
+<body class="bg-blanc">
+    <nav class="w-full bg-blanc flex items-center shadow-md justify-between px-5 py-2 z-30 fixed">
+        <div class="flex items-center gap-2">
+            
+            <div>
+                <img src="./src/images/logo.png" alt=""class="w-10 h-10 rounded-full">
+            </div>
+            <div class=" flex md:hidden">
+                <i class="bi bi-list text-3xl text-bleu_ray "></i>
+            </div>
+        </div>
+        <div class="w-11/12 h-full flex flex-col gap-4 bg-blanc absolute top-14 -left-4 px-5 hidden">
+            <div class="flex items-center gap-4">
+                <i class="bi bi-house-door-fill text-2xl text-bleu_ray"></i>
+                <p class="text-bleu_ray uppercase">Home</p>
+            </div>
+            <div class="flex items-center gap-4">
+                <i class="bi bi-grid-3x3-gap-fill text-2xl text-bleu_ray"></i>
+                <p class="text-bleu_ray uppercase">My Application</p>
+            </div>
+            <div class="flex items-center gap-4">
+                <i class="bi bi-hdd-rack-fill text-2xl text-bleu_ray"></i>
+                <p class="text-bleu_ray uppercase">My VPSA</p>
+            </div>
+            <div class="flex items-center gap-4">
+                <i class="bi bi-kanban-fill text-2xl text-bleu_ray"></i>
+                <p class="text-bleu_ray uppercase">Bling</p>
+            </div>
+            <div class="flex items-center gap-4">
+                <i class="bi bi-layers-fill text-2xl text-bleu_ray"></i>
+                <p class="text-bleu_ray uppercase">Tickets</p>
+            </div>
+            <div class="flex items-center gap-4">
+                <i class="bi bi-grid-3x3-gap-fill text-2xl text-bleu_ray"></i>
+                <p class="text-bleu_ray uppercase">All Products</p>
+            </div>
+            <div class="flex items-center gap-4">
+                <i class="bi bi-layout-text-window-reverse text-2xl text-bleu_ray"></i>
+                <p class="text-bleu_ray uppercase">Documentation</p>
+            </div>
+        </div>
+        
+        <div class="md:flex items-center gap-2 hidden ">
+            <ul class="flex items-center gap-4 ">
+                <li class=""><a href="" class="text-xl text-bleu_ray capitalize hover:text-bleu_f duration-200">home</a></li>
+                <li class=""><a href="#" class="text-xl text-bleu_ray capitalize hover:text-bleu_f duration-200">my application</a></li>
+                <li class=""><a href="#" class="text-xl text-bleu_ray capitalize hover:text-bleu_f duration-200">my vps</a></li>
+                <li class=""><a href="#" class="text-xl text-bleu_ray capitalize hover:text-bleu_f duration-200">billing</a></li>
+                <li class=""><a href="#" class="text-xl text-bleu_ray capitalize hover:text-bleu_f duration-200">all products</a></li>
+            </ul>
+        </div>
+        <div class="items-center gap-2 hidden sm:flex">
+            <i class="bi bi-envelope-fill text-2xl text-bleu_ray "></i>
+            <i class="bi bi-file-person-fill text-2xl text-bleu_ray "></i>
+            <p class="text-xl text-bleu_ray capitalize">tutyonic oscar</p>
+        </div>
+        <div class="items-center flex sm:hidden">
+            <i class="bi bi-three-dots-vertical text-bleu_ray text-2xl"></i>
+        </div>
+        <div class="w-96 h-screen flex flex-col bg-blanc absolute top-14 left-24 hidden">
+            <div class="flex gap-4 items-center border-b border-bleu_ray hover:bg-bleu_ray hover:text-blanc duration-300 pb-1 bg-gray1 px-5">
+                <i class="bi bi-circle text-2xl text-blborder-bleu_ray"></i>
+                <p class="text-blborder-bleu_ray">Account information</p>
+            </div>
+            <div class="flex gap-4 items-center border-b border-bleu_ray hover:bg-bleu_ray hover:text-blanc pb-1 px-5 duration-200 hover:bg-gray1">
+                <i class="bi bi-keyboard-fill text-2xl text-blborder-bleu_ray"></i>
+                <p class="text-blborder-bleu_ray">Change Password</p>
+            </div>
+            <div class="flex gap-4 items-center  pb-1 px-5 hover:bg-bleu_ray hover:text-blanc duration-300">
+                <i class="bi bi-box-arrow-right text-2xl text-blborder-bleu_ray"></i>
+                <p class="text-blborder-bleu_ray">Log Out</p>
+            </div>
+        </div>
+    </nav>
+    <!-- <section class="w-full h-32 flex items-center px-10 justify-between bg-bleu_ray fixed z-30">
+        <p>.</p>
+        <div class="">
+            <i class="bi bi-camera-fill text-2xl text-blanc"></i><br>
+            <button class="text-blanc font-bold px-3 rounded border border-blanc text-sm">Send</button>
+        </div>
+    </section> -->
+    <main class="w-full min-h-screen lg:flex relative">
+        <section class="lg:w-1/4 h-screen bg-bleu_f lg:fixed lg:translate-y-[10%] z-0">
+            <div>
+                <div class="flex flex-col gap-4 px-5">
+                    <div class="flex flex-col gap-3 relative translate-y-12 lg:translate-y-0">
+                        <img src="./src/images/Séverin.jpg" alt="" class="w-32 h-32 rounded-[100%] object-cover absolute top-5 z-50">
+                        <h1 class="font-bold text-2xl text-blanc translate-y-40">Admin. Séverin A.</h1>
+                    </div>
+                    <div class="flex gap-2 translate-y-52 lg:translate-y-40">
+                        <div class="bg-blanc rounded flex gap-1 px-3 py-1 items-center">
+                            <i class="bi bi-link-45deg text-gray2 font-bold"></i>
+                            <p class="text-gray2 font-bold text-xs">Copy profil link</p>
+                        </div>
+                        <div class="bg-blanc rounded flex gap-1 px-3 py-1 items-center">
+                            <i class="bi bi-pen text-gray2 font-bold"></i>
+                            <p class="text-gray2 font-bold text-xs">Edit</p>
+                        </div>
+                    </div>
+                    <div class="translate-y-52 lg:translate-y-40 flex gap-4">
+                        <p class="font-bold text-blanc">0 <span>followers</span></p>
+                        <p class="font-bold text-blanc">0 <span>following</span></p>
+                    </div>
+                    <div class="translate-y-52 lg:translate-y-40">
+                        <div class="flex gap-10 lg:gap-2 lg:block">
+                            <div>
+                                <p class="text-blanc">Compte email: <span>Severalimasi@gmail.com</span></p>
+                            </div>
+                            <div>
+                                <p class="text-blanc">Date d'inscription: <span>13/09/2023</span></p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex flex-col lg:gap-4 pt-3">
+                                <div class="flex lg:gap-3">
+                                    <p class="text-blanc flex">Niveau <div class="flex lg:gap-2 gap-8">
+                                        <button class="bg-gray2 px-3 rounded text-blanc py-1 mb-2 text-xs"><i class="bi bi-cloud-fill"></i> 30% DE REDUCTION</button>
+                                        <button class="bg-gray2 px-3 rounded text-blanc py-1 mb-2 text-xs"><i class="bi bi-cloud-fill"></i> 45% DE REDUCTION</button>
+                                    </div>
+                                    </p>
+                                </div>
+                                <div class="flex gap-3">
+                                    <p class="text-blanc">D'Adhésion: <div class="flex gap-2">
+                                        <button class="bg-gray2 px-3 rounded text-blanc mb-2 py-1 text-xs"><i class="bi bi-cloud-fill"></i> 60% DE REDUCTION</button>
+                                        <button class="bg-gray2 px-3 rounded text-blanc mb-2 py-1 text-xs"><i class="bi bi-cloud-fill"></i> 75% DE REDUCTION</button>
+                                    </div>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full items-center justify-center pt-5 lg:pt-5">
+                            <button class="bg-blanc rounded px-3 py-2 text-bleu_f font-bold">Devenir Membre</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="lg:w-3/4 w-full  min-h-screen flex flex-col gap-8 bg-blanc translate-y-10 lg:mt-10 absolute px-4 lg:translate-x-[33%] z-10">
+            <div class="w-full min-h-32 flex flex-col shadow-md border-gray2">
+                <div class="w-full pt-3 border items-center border-bleu_f px-2">
+                    <p class="text-bleu_f">Edit Account Information</p>
+                </div>
+                <div class="w-full  md:flex px-2 justify-between gap-8 mt-4 pb-5 items-center">
+                    <div class="flex flex-col gap-4 w-full pb-5 md:pb-0">
+                        <div class="flex flex-col w-full">
+                            <label for="email" class="text-bleu_f text-sm after:content-['*'] after:ml-0.5 after:text-reds block font-medium">
+                                Email
+                            </label>
+                            <div class="w-full flex relative">
+                                <i class="bi bi-pen-fill text-gray2 text-sm absolute top-1/2 right-3 -translate-y-1/2"></i>
+                                <i class="bi bi-x hidden text-gray2 text-sm absolute top-1/2 right-3 -translate-y-1/2"></i>
+                                <input type="email" name="" id="email" placeholder="Email_adress@gmail.com" class="bg-blanc border-b-2 bg-transparent border-bleu_f w-full py-2 px-3">
+                            </div>
+                        </div>
+                        <div class="flex flex-col w-full">
+                            <label for="name" class="text-bleu_f text-sm after:content-['*'] after:ml-0.5 after:text-reds block font-medium">First Name</label>
+                            <div class="w-full flex relative">
+                                <i class="bi bi-pen-fill absolute text-sm text-gray2 top-1/2 right-3 -translate-y-1/2"></i>
+                                <i class="bi bi-x hidden absolute text-sm text-gray2 top-1/2 right-3 -translate-y-1/2"></i>
+                                <input type="text" name="" id="name" placeholder="Charles" class="border-b-2 bg-blanc bg-transparent border-bleu_f w-full py-2 px-3">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-4 w-full">
+                        <div class="flex flex-col w-full pt-8">
+                            <label for="alt" class="text-bleu_f text-sm border-b-2 border-gray2 pb-1">Alternative Email</label>
+                            
+                        </div>
+                        <div class="flex flex-col w-full">
+                            <label for="last" class="text-bleu_f text-sm after:content-['*'] after:ml-0.5 after:text-reds block font-medium ">Last Name</label>
+                            <div class="w-full flex relative">
+                                <i class="bi bi-pen-fill absolute text-sm text-gray2 top-1/2 right-3 -translate-y-1/2"></i>
+                                <i class="bi bi-x hidden absolute text-sm text-gray2 top-1/2 right-3 -translate-y-1/2"></i>
+                                <input type="text" name="" id="last" placeholder="Basilwango" class="border-b-2 bg-blanc bg-transparent border-bleu_f w-full py-2 px-3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full min-h-32 flex flex-col shadow-md border-gray1">
+                <div class="w-full pt-3 border border-bleu_f px-2">
+                    <p class="text-bleu_f ">Edit Billing Information</p>
+                </div>
+                <div class="w-full  md:flex px-2 justify-between gap-8 mt-4 pb-5 items-center">
+                    <div class="flex flex-col gap-4 w-full pb-5 md:pb-0">
+                        <div class="flex flex-col w-full gap-2">
+                            <label for="email" class="text-bleu_f text-sm after:content-['*'] after:ml-0.5 after:text-reds block font-medium">
+                                Contry
+                            </label>
+                            <div class="w-full flex">
+                                <select name="" id="" class="border-b-2 text-blanc bg-transparent border-bleu_f w-full py-2 px-3 outline-none rounded bg-bleu_f">
+                                    <option value="">Select your contry</option>
+                                    <option value="">Congo The Republic Of The</option>
+                                    <option value="">Tanzanie</option>
+                                    <option value="">Mali</option>
+                                    <option value="">Rwanda</option>
+                                    <option value="">Madagascar</option>
+                                    <option value="">Zambie</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="flex flex-col w-full">
+                            <label for="name" class="text-bleu_f text-sm after:content-['*'] after:ml-0.5 after:text-reds block font-medium">City</label>
+                            <div class="w-full flex relative">
+                                <i class="bi bi-pen-fill absolute text-sm text-gray2 top-1/2 right-3 -translate-y-1/2"></i>
+                                <i class="bi bi-x hidden absolute text-sm text-gray2 top-1/2 right-3 -translate-y-1/2"></i>
+                                <input type="text" name="" id="name" placeholder="Bujumbura" class="border-b-2 bg-blanc bg-transparent border-bleu_f w-full py-2 px-3">
+                            </div>
+                        </div>
+                        <div class="flex flex-col w-full pt-10">
+                            <label for="alt" class="text-bleu_f text-sm border-b-2 border-bleu_f  pb-1">Adresse 2</label>
+                           
+                        </div>
+                        <div class="flex flex-col w-full pt-3">
+                            <label for="name" class="text-bleu_f text-sm after:content-['*'] after:ml-0.5 after:text-reds block font-medium">Company</label>
+                            <div class="w-full flex relative">
+                                <i class="bi bi-pen-fill absolute text-sm text-gray2 top-1/2 right-3 -translate-y-1/2"></i>
+                                <i class="bi bi-x hidden absolute text-sm text-gray2 top-1/2 right-3 -translate-y-1/2"></i>
+                                <input type="text" name="" id="name" placeholder="Company" class="border-b-2 bg-blanc bg-transparent border-bleu_f w-full py-2 px-3">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-4 w-full">
+                        <div class="flex flex-col w-full gap-2 pt-2">
+                            <label for="email" class="text-bleu_f text-sm after:content-['*'] after:ml-0.5 after:text-reds block font-medium">
+                                State
+                            </label>
+                            <div class="w-full flex">
+                                <select name="" id="" class="border-b-2 text-blanc bg-transparent border-bleu_f w-full py-2 px-3 outline-none rounded bg-bleu_f">
+                                    <option value="">Select your state</option>
+                                    <option value="">Kinshasa</option>
+                                    <option value="">Darsalam</option>
+                                    <option value="">Kigali</option>
+                                    <option value="">Kampala</option>
+                                    <option value="">Berlin</option>
+                                    <option value="">Paris</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="flex flex-col w-full">
+                            <label for="last" class="text-bleu_f text-sm after:content-['*'] after:ml-0.5 after:text-reds block font-medium ">Adresse</label>
+                            <div class="w-full flex relative">
+                                <i class="bi bi-pen-fill absolute text-sm text-gray2 top-1/2 right-3 -translate-y-1/2"></i>
+                                <i class="bi bi-x hidden absolute text-sm text-gray2 top-1/2 right-3 -translate-y-1/2"></i>
+                                <input type="text" name="" id="last" placeholder="Kinshasa Q.Gombe" class="border-b-2 bg-blanc bg-transparent border-bleu_f w-full py-2 px-3">
+                            </div>
+                        </div>
+                        <div class="flex flex-col w-full">
+                            <label for="name" class="text-bleu_f text-sm after:content-['*'] after:ml-0.5 after:text-reds block font-medium">Post-code</label>
+                            <div class="w-full flex relative">
+                                <i class="bi bi-pen-fill absolute text-sm text-gray2 top-1/2 right-3 -translate-y-1/2"></i>
+                                <i class="bi bi-x hidden absolute text-sm text-gray2 top-1/2 right-3 -translate-y-1/2"></i>
+                                <input type="text" name="" id="name" placeholder="M93M-937" class="border-b-2 bg-blanc bg-transparent border-bleu_f w-full py-2 px-3">
+                            </div>
+                        </div>
+                        <div class="flex flex-col w-full gap-2">
+                            <label for="email" class="text-bleu_f text-sm after:content-['*'] after:ml-0.5 after:text-reds block font-medium">
+                                Phone Number
+                            </label>
+                            <div class="w-full flex border-b-2 border-bleu_f">
+                                <select name="" id="" class="bg-bleu_f text-blanc rounded py-2 outline-none px-4">
+                                    <option value="">+243</option>
+                                    <option value="">+257</option>
+                                    <option value="">+242</option>
+                                    <option value="">+250</option>
+                                    <option value="">+270</option>
+                                    <option value="">+246</option>
+                                    <option value="">+230</option>
+                                </select>
+                                <div class="w-full flex relative">
+                                    <i class="bi bi-pen-fill absolute text-sm text-gray2 top-1/2 right-3 -translate-y-1/2"></i>
+                                    <i class="bi bi-x hidden absolute text-sm text-gray2 top-1/2 right-3 -translate-y-1/2"></i>
+                                    <input type="text" name="" id="name" placeholder="995867889" class="border-b-2 bg-blanc bg-transparent border-bleu_f w-full py-2 px-3">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full min-h-32 flex flex-col items-center px-2 pb-8 shadow-md border-gray1">
+                <div class="w-full pt-3 border border-bleu_f px-2 flex justify-between">
+                    <p class="text-bleu_f">Additional Information</p>
+                    <i class="bi bi-toggle-on text-2xl text-bleu_f"></i>
+                </div>
+                <div class="w-full  md:flex px-2 justify-between gap-8 mt-4 pb-5">
+                    <div class="flex flex-col gap-4 w-full pb-5 md:pb-0">
+                        <div class="flex flex-col w-full">
+                            <label for="email" class="text-bleu_f text-sm after:content-['*'] after:ml-0.5 after:text-reds block font-medium">
+                                Web Site
+                            </label>
+                            <div class="w-full flex relative">
+                                <i class="bi bi-pen-fill text-gray2 text-sm absolute top-1/2 right-3 -translate-y-1/2"></i>
+                                <i class="bi bi-x hidden text-gray2 text-sm absolute top-1/2 right-3 -translate-y-1/2"></i>
+                                <input type="email" name="" id="email" placeholder="https://www.youthreproductivehealth.org/" class="border-b-2 bg-blanc bg-transparent border-bleu_f w-full py-2 px-3">
+                            </div>
+                        </div>
+                        <div class="flex flex-col w-full">
+                            <label for="name" class="text-blanc text-sm after:content-['*'] after:ml-0.5 after:text-reds block font-medium">Twitter</label>
+                            <div class="w-full flex relative">
+                                <i class="bi bi-pen-fill absolute text-sm text-gray2 top-1/2 right-3 -translate-y-1/2"></i>
+                                <i class="bi bi-x hidden absolute text-sm text-gray2 top-1/2 right-3 -translate-y-1/2"></i>
+                                <input type="text" name="" id="name" placeholder="https://x.com/MICROGELS_?t=6kLtpet2A-_tGhDh82YPow&s=09" class="border-b-2 bg-blanc bg-transparent border-bleu_f w-full py-2 px-3">
+                            </div>
+                        </div>
+                        <div class="flex flex-col w-full">
+                            <label for="name" class="text-blanc text-sm after:content-['*'] after:ml-0.5 after:text-reds block font-medium">Instagram</label>
+                            <div class="w-full flex relative">
+                                <i class="bi bi-pen-fill absolute text-sm text-gray2 top-1/2 right-3 -translate-y-1/2"></i>
+                                <i class="bi bi-x hidden absolute text-sm text-gray2 top-1/2 right-3 -translate-y-1/2"></i>
+                                <input type="text" name="" id="name" placeholder="https://x.com/MICROGELS_?t=6kLtpet2A-_tGhDh82YPow&s=09" class="border-b-2 bg-blanc bg-transparent border-bleu_f w-full py-2 px-3">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-4 w-full pt-8">
+                        <div class="flex flex-col w-full ">
+                            <label for="alt" class="text-bleu_f text-sm border-b-2 border-bleu_f pb-1">Google+</label>
+                            
+                        </div>
+                        <div class="flex flex-col w-full">
+                            <label for="last" class="text-bleu_f text-sm after:content-['*'] after:ml-0.5 after:text-reds block font-medium ">Facebook</label>
+                            <div class="w-full flex relative">
+                                <i class="bi bi-pen-fill absolute text-sm text-gray2 top-1/2 right-3 -translate-y-1/2"></i>
+                                <i class="bi bi-x hidden absolute text-sm text-gray2 top-1/2 right-3 -translate-y-1/2"></i>
+                                <input type="text" name="" id="last" placeholder="https://x.com/MICROGELS_?t=6kLtpet2A-_tGhDh82YPow&s=09" class="border-b-2 bg-blanc bg-transparent border-bleu_f w-full py-2 px-3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-11/12 shadow bg-bleu_f rounded flex flex-col gap-2 py-1 px-2">
+                    <p class="text-blanc">Backend developer and community management of youth reproductive heath</p>
+                    <p class="text-blanc">Keen of technology</p>
+                </div>
+            </div>
+            <div class="w-full flex justify-end">
+                <div>
+                    <button class="font-bold py-1 px-3 bg-bleu_f text-blanc">Update</button>
+                    <i class="bi bi-chat-left-dots-fill text-3xl bg-bleu_f text-blanc rounded-full px-4 py-2"></i>
+                </div>
+            </div>
+            <footer>
+                <div class="p-10 bg-bleu_ray text-blanc">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2">
+                        <div class="mb-5">
+                            <h4 class="text-xl font-bold pb-4">Company</h4>
+                            <div class="mb-5 flex flex-col gap-2 text-gray2">
+                                <p class="hover:text-blanc duration-300 text-color_text">Microgels</p>
+                                <p class="hover:text-blanc duration-300 text-color_text">Bujumbura, cibitoke</p>
+                                <p class="hover:text-blanc duration-300 text-color_text">Burundi</p>
+                                <strong class="hover:text-blanc duration-300 text-color_text">Phone: <p>+257 66460589</p></strong>
+                                <strong class="hover:text-blanc duration-300 text-color_text">Email: <p>microgels@gmail.com</p></strong>
+                            </div>
+                        </div>
+                        <div class="mb-5">
+                            <h4 class="text-xl font-bold pb-4">Usefull Links</h4>
+                            <ul class="text-gray2">
+                                <li class="pb-4"><i class="bi bi-chevron-right text-blanc"></i><a href="" class="hover:text-blanc text-color_text duration-300"> Acceuil</a></li>
+                                <li class="pb-4"><i class="bi bi-chevron-right text-blanc"></i><a href="" class="hover:text-blanc text-color_text duration-300"> Forum</a></li>
+                                <li class="pb-4"><i class="bi bi-chevron-right text-blanc"></i><a href="" class="hover:text-blanc text-color_text duration-300"> Description</a></li>
+                                <li class="pb-4"><i class="bi bi-chevron-right text-blanc"></i><a href="" class="hover:text-blanc text-color_text duration-300"> Contacts</a></li>
+                                <li class="pb-4"><i class="bi bi-chevron-right text-blanc"></i><a href="" class="hover:text-blanc text-color_text duration-300"> Discution</a></li>
+                            </ul>
+                        </div>
+                        <div class="mb-5">
+                            <h4 class="text-xl font-bold pb-4">Our services</h4>
+                            <ul class="text-gray2">
+                                <li class="pb-4"><i class="bi bi-chevron-right text-blanc"></i><a href="" class="hover:text-blanc text-color_text duration-300"> Web design</a></li>
+                                <li class="pb-4"><i class="bi bi-chevron-right text-blanc"></i><a href="" class="hover:text-blanc text-color_text duration-300"> Web development</a></li>
+                                <li class="pb-4"><i class="bi bi-chevron-right text-blanc"></i><a href="" class="hover:text-blanc text-color_text duration-300"> Graphic design</a></li>
+                                <li class="pb-4"><i class="bi bi-chevron-right text-blanc"></i><a href="" class="hover:text-blanc text-color_text duration-300"> Bureautique</a></li>
+                                <li class="pb-4"><i class="bi bi-chevron-right text-blanc"></i><a href="" class="hover:text-blanc text-color_text duration-300"> Administration réseau</a></li>
+                            </ul>
+                        </div>
+                        <div class="mb-5">
+                            <h4 class="text-xl font-bold pb-4">Join Our Newsletter</h4>
+                            <p class="text-color_text pb-2">Joins 123+ others and never miss out on new tips, tutorials, and more</p>
+                            <form action="" class="flex flex-row flex-wrap">
+                                <input type="text" name="" id="" class="text-gray2 w-2/3 p-2 focus:border-blanc outline-none rounded" placeholder="email@gmail.com">
+                                <button class="p-2 w-1/3 bg-bleu text-blanc font-bold">Suscribe</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full bg-bleu text-blanc px-10">
+                    <div class="max-w-7xl flex flex-col sm:flex-row py-4 mx-auto justify-between items-center">
+                        <div class="text-center">
+                            <div>
+                                &copy; Copyright <strong><span>Microgels</span></strong>. All Right Reserved
+                            </div>
+                            <div>
+                                Designed by <a href="#" class="text-gray2">TailwindCss</a>
+                            </div>
+                        </div>
+                        <div class="text-center text-xl text-blanc mb-2">
+                            <a href="#" class="w-10 h-10 rounded-full bg-black hover:bg-bleu_ray mx-1 inline-block pt-1"><i class="bi bi-facebook"></i></a>
+                            <a href="#" class="w-10 h-10 rounded-full bg-black hover:bg-bleu_ray mx-1 inline-block pt-1"><i class="bi bi-instagram"></i></a>
+                            <a href="#" class="w-10 h-10 rounded-full bg-black hover:bg-bleu_ray mx-1 inline-block pt-1"><i class="bi bi-twitter-x"></i></a>
+                            <a href="#" class="w-10 h-10 rounded-full bg-black hover:bg-bleu_ray mx-1 inline-block pt-1"><i class="bi bi-linkedin"></i></a>
+                            <a href="#" class="w-10 h-10 rounded-full bg-black hover:bg-bleu_ray mx-1 inline-block pt-1"><i class="bi bi-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </section>
+    </main>
+</body>
+</html>
